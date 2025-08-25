@@ -4,3 +4,5 @@ const str = "Josh"
 const Bool = true
 
 console.log(`My name is ${str}, and I'm not a minor: ${Bool}`);
+
+//template literal (`...${}...`).
