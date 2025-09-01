@@ -1,4 +1,4 @@
-// print array, and then push a new item using array push or equivalent
+// Day 16: print array, and then push a new item using array push or equivalent
 
 const numbers = [1, 2, 3, 4, 5];
 console.log(numbers);

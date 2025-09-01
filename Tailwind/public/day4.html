@@ -1,3 +1,5 @@
+<!-- Day 4: Explore Grid utilities (grid, grid-cols-, gap-). → Make a card layout. -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +25,75 @@
             </nav>
         </div>
     </header>
+
+    <div class="h-screen">
+        <div class="grid grid-cols-4 p-8 gap-4">
+            <div class="border p-4 rounded hover:shadow-lg transition">
+                <div class="h-60 bg-gray-300 mb-4 rounded overflow-hidden">
+                    <img src="https://preview.redd.it/tsj8l8ahuw431.jpg?auto=webp&s=621c0921b6089c2036d43ada55580be8f2b7e437" alt="Placeholder Image" class="w-full h-full object-cover rounded">
+                </div>
+                <h2 class="text-lg font-semibold text-center">Title Card</h2>
+                <p class="text-medium text-center">Description of the card content goes here.</p>
+            </div>
+            
+           <div class="border p-4 rounded hover:shadow-lg transition">
+                <div class="h-60 bg-gray-300 mb-4 rounded">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExIWFRUXGBcaGBgYFRcXFxgYGBcXFxoYGBcYHSggGB0lHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0dHR0tLS0tLS0tLS0tLS0tLSstLS0tKy0tLS0tLS0tLS0tNy0tLTctLSstKystNy0rLSstK//AABEIASwAqAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAECBAUGBwj/xAA2EAABAwIEBAUCBgEEAwAAAAABAAIRAyEEMUFRBRJhcQYTgZHwoeEiMrHB0fEUFUJicgcjUv/EABkBAQEBAQEBAAAAAAAAAAAAAAECAAMEBf/EAB4RAQEBAAIDAQEBAAAAAAAAAAABEQIhEjFBUQNh/9oADAMBAAIRAxEAPwDzF1P09AhOpkXKkasIjL5Zrh2+grkSrNOlHdMBG0pnvhFu9KmYTqnuhuakVJlkzpN7D5VCpKMSENwGhVChMsjU6+/0UC1NyrJ1cBDhofmyi6gLFVmghHZX3upsvxUsvsnNKgrILSguGyxIQlCZw903NukSiJkuZOFsJEpxCYtTwjSbROme6B1STJovKQENSyUmuBUnBHYh21rXHZFbcWVflTtOyFaKafSFKgzVQc8mFABFCxVog3iPZValIjSyssqbozCCLXRtislZpIUwrVSgD0KA+iW6eun2VzlqLxobmFIhFHzZLy5K2jEKVM5yp8sI8ABVaj57JPoOoZSaEmqZCyTJ+cob07SVUbaMHeikSIkoUyoOdNlM46fIxunU6bJO6Za3BICZRaVTdTLZzCgGbJ3W9C+YCmLdlBjd0UiFKoQapNYnb1UKlQCwQo1d+g9UNpIyKXVIKsZZZiJz91aYQVRpNlGFuii8VSpVqI7fuosECEznboTqkJgvsqr9Agv6KfyEwCYinASKYpFUES3ZObJ2t1TxusLEHNTSrjCFB1IHomcm8TUnDskomkRokjqqlwzXe36JnOTP2TKSLIhSaUNuSk54haseo73QoUgNSmCcERhEpiVECUZogItVIkGgdEHzTMqYvclDfTIvK0a/4K2rKctDtFXIjopteR1Wxpy67I0T3CiFZpvBUiwESfdba2b6VSnYxFdRI7JNCUWYj5ahCMWpnU4/lZsBRKdXRIt6pcqW2xaY8JlWFklNivKKjbFEaUV7AcxCYMI7J1OVEO7JR2USEpOqzS/qRTtuhgqTXxksoZohQqPmyZzp6JgxbG5fkNzEdQj06oQCEwCyZsWjTDroLqZCZtQ6/dWA/WZRel9clZEp1SER1MG6G5hCfYzFgPBUKjkKFMJkbRGPU23UWMgIjHRCGDdS2UeVW/M3CYxstrZqrypKy+jOSSUYpAhSQnJ6ZhQ6Q7qKDUaRZWg4FRI3yTBeOqLdlNl1N7L2TtSmSlkkBqmF06ykh1S5Apt6pVBkVmDcDqlyx3UxPdJrNVhYdr/fojOeIQuYJBqw8qQlFos1UWM0VlrQk4iZKM1luqdkKblNIfLCbREa2U/lytIyDHjWySKKWiSW1ncu6Z9NRFYGLQfmSIKiiTFy6A4Rooh5CI/4EGJuqgpu6RTG6k61kpMpBu+qtcLwwqPhxhsXOo2hW8bws0284cHt1MQR/wBht1WrMxxTgJipAT6LMk1sqQEJ26KT3QMkfWQMJASUwGyPSH9KhibWgZoob0UadNFRpJoUmtnoP1UWqzRZusyBapMYjNZrrkER1A9I1MrMByzYf0krVNvKLR+9kyQ5JoUgJ1TQmc7Qf2hRnFM5ycqLmmFk0mlOLoStNgd1hOx8GCCI1N11GFp23BFwciDmDuud4ezmd2XYYJktEieyr4i3K5LivD/Kdb8hu0/se1u4IVam2y6/iuGD2wfQ/wDL73Hr2XKmkWlwcMv5Cl1gcWUeQnupnp81U6cd0fSEG6IhAspspJPYR82TrYm0HVaOFwLnDm/K066nsNe6Fw2hJkidhoep6fqukqstdajWNiMA1reZri64mbeqrOBEAa/QbrVxruWk4nK3vIhY9B51zOfTotBq7Ri2+iOWEiwsMydSM4GwVeiIjrIG9sz6Z+w1Wq3lcAKcw3c3gdDmf5WM7Z8T6aGxTq62kDYx++6SNPi8+e6UmuhTDUxCqwG6qQcotUuTrmhjhsXspuchwpZ5pZocGf8AjEid+xsuw4fRcLXjQ3yXH8Cw/NXZc5kW1tIn2XeU5Am46dtuiybPo3+KD+a6K3AUXm9ME7xtBj6hV2vBP4jytOsroMI0WiD1GqwZ7vCtCpDjT5Ttl7wqGI8DUSWkOcIJ5hM81h7arsqbZU3NhTap4rxOmKVWoA0tDDrn+FpJ9xHus1mNOZbMifTc7L1njvCGVZ/CJMT1gFeZce4SaL5BGZOenVV8c9sbfAmDlk3JzmLbR6LXqi0R6/0uW4Hi51g9s+y6ehmJz2GqmunHtR4ueWmAdXAe0n+Fk02DMERscvstHjFfnqcoyZb1tP8AHoqdIAHp310VRrFzDVAcwQ6I5f8A5aMo3nM/ZSptGRsd0EtzdP2hTbXmzvTf7opi6Kp/LflsTlsCO+SSHhXiSRMan9oSRh1wcqZCGQkHwlMp0kRvRRLUkyflSRcM2XtByJAQztPBnAuUDEPmTPK3SNyF0vEcLNNzwY5Wk2GgG2qVFwDQBotDC1GxByNoU2s8Z4xxKrzmJPKG8xuA0vEhog7anYrrP/H/ABio55puuCHcpExLSLibweuy0+Mf+PsPWeajXvYTmMxb6o/B/D4w7w4O/C1pa1sR+Yy4m/QfVVbMc+M5b36dXg6u6fGYi0BZn+SBqndXm+al0xh+KvGDcLDA3zKkC0w1s5cx/ZcTivEr8TapSYJMAs0OxlXPFHC6lQ1neU5zg8kRaZayHf8AKGgiOvRYvBuHVnl//qcSWFoHLEu/DySBYBpE83fdXMxx575Z8SwlYNqWsfll3nDqZLOYmPn0XE8b4U6m88syM9RPdLgXFHz5TnkMfYzJgzprC1nSuP8ATx6a2Jrgvdym3MY/lIgG0TG63sP4epjMuPrCfEcLY3IfUoVrGwxNh87KlxXjlKkSB+J+gGQ7lUvEPmtkA8oOcZ+65MtVceP65c/6WenRU/FbwbMaBtukubISV5HPzrdNMqAVotQyxcteuwJhjJSDpTuFkgs00oRMOeVzXbEfqhg7/oiUHguECbj9U/BXpjK9kbDVgLk3Wc6pA6qu/EkbqA6Wniuqp8VrVAJYJbrGa55nGwDBkK5/rAj831C2L4+9HwmOD2glpaToYkEEjT37IWC40174Y17rwRyOHrJEQs0YgF8A2ifVbWAxjWC0e6cdedmdN2lUAuQrRxbdrLBqcRG4+qdmMB19Psc0OAfF+BUqzg4WuMl57x/hrqGJIiGkiDB9F6HgqxDyJtNuinxvhAxDYjsdQnXLlEuDgvo03btH8K2/DzZXMDhAym1o0EIxpIW5jinCGlpls99Oy8047wxzXF3JAHS3ovbK2GkLivEvCybltSBnBAHrKrjyc+XF5YW6HP5okrHEKHI8xltM/VJddcca7SnJVZEp1N1zeuchWjbNMRKTxqFF5tv81Qq1F5i0e6ei8yIv80AQTe5+dkfCEl7WiwJHU+qUu6pmQOw/RNVYiPsB2TtIKgaonDtQ/wDCbsr76SCUymcsUjgBsFH/ABHbkepVvzLoNavNtE6fJWqU3j/efcq9hnOJCC2+avYWmjUa0cE8B0FdDh+6wcLRut/AtUW9svsbZSY1TiyJSYp1UCFJZnF8KC0/h5o0W7yKriWZplTXininAOJJNJzSMtfskur8V0HGbCL3JA/RJeiXpyseelqGRfNFF1AqXQnVuW8W2Tc4Pf5ZQlR5vgTI1qc72+bKxg8QGvbAgTfUn5sqYdv6JCy1io9MoEOaOqA5pBWV4b4mHt5Cbj3I3XQVGSJUN7VhVTG6Jy9Em00BXfQBQ24UK26iUzMMc1mqNGg2brUw9IbKtQwhm0rUw+EdvCm8gLQbdbGEZCHhcGBmtCk0bKSm2misYpUx1TkIbUSg1QjFQeExnHeKcOHNNrxsT90loeIKIcw82XbI+4SXfjekV4vkhG9tFOo7RMGQsoOo3ZV5Vqp9UFzEyihQlzlJyaVSdX+D4vy6rXaTfsvScJVD22IMiy8mhdx4Qx3MzkObf0UcorjXQOpmUSmzRTKlSHRc6shR6K1Sw2wUqTcloUGworIUcNYFX6YAyCZrWwnD0C0eVYpBZ/nXgBWmVDF1hsXOdIVFU8xSDrrMsFQcUxdIUS9Zga7AcwkjEJJ2h8806eqcqThGSgcl3WG8oZU3KDlkaG5Dc2ERwTFMoCC7nwpgOWnznN36Lk+F4TzarWDU/TVenUaIa0AZBHKnjD0qlkak5Uy4TEolKoodG3ScFZpuWNSrxZWaeJUckNN1WEvMJVSkSeqOzqVIFE/0pNec7nomY7ZGFAgTqs0GY87IoCrU39UUVFiKQoM6py5Q5lhRQUk0pLB4CXIb2z+X2UybIZcvQsF7pTFym6+fuhz7p9oM5QKmtLgvCTXfP+wG5/ZDNzwXw+AapzMgdtV1NUQELh9AMENEAJY2qGgkrnyt+Kkxz/FuJ+U9s/lJWrhsQHtD25FcT4sxdw3rMdFDg3G3MsbhX49any7egMfe5hXKDwsXhuMbWEg+ivNUWHW/ReCrLYWBSrELYwzwQDP2RcatKiIvCKa0WVUVmjM/VQe/Y9lITcQbqNKqUF9bdVhXhyGafnIvMszzNlYp1bJxlwVIMFJBDgnRei8Keh9FJyGSvS2pVGkIU7qXMmIQEALhek8HwPlUmt117ricBwOvVHM1ls7mJ7L0JriALHtqppgwsuf8T8SZRaCbu0Ercl5H4KZPew9yqFTwp5r/ADMR+IjJo/KP5KmYbteXltSu8ugkkzl+i2OG+Hqr8xyic7L0ehwhlOzWgAaQEVuF2CvzE4Mbg/CRRbAzV59lfbShAexQfXQDSrtGty3jv069VRFIqyzmWsF1oMxI2BH1RA/a0+yoU2OOiLSDh8spsC06dVWf0RwZ/RM9kIZCk6FJ1XlBVfzYkqriq0/PUJjNWhipAv8APkJLFw2I0PX0+ZpJklLzMyOvX+VAqbnIcr0QIldh4V8ONc0VKombtacgN+q5rhFAVKzGnIuv1AvC9VwcQAAo5NBKWGAGSMKQKnkguqwVyzta40AKNWqFSfiRCo1se0WmFQ1omqFA1Nliv4g3RwQhxUA5rYLW5zlRLZ1WOeKDdJvEQdU4GyICIKzRosQY2SRzDokMZAmYWxtdAzEBFNVvuuX/ANWEiTBNs7Sk7jbeUnbNbGdHXqgQZVPFY0ZLkeJ8ekDlNoy+e6zKfiAkAO0mevVbxZ12JxoAmYCov4k2bnQ/TRc87iRc2Jtr+x7rMxOKJ1WxnSHjHK53/a3aP7+iZct5kz7+qScKTnbIZTnJMTC6SAmvLSHAwQbHruu44F4ia6mOZwDmiHA7xn6rh2tQnIzaXrtLibYDi4dBKocR8R0mgy4dpuvM2VnHNxt1KOKQyhTZjTt0OL8WA/lae5ssatxqq902jbNVSFGmEYfE1bEPdm49h9kLznDU+6m9QiyroWHbjKlvxO9zumbjKkzzHKM9NkMojW2SnBWYt4M8x91ZqcVeQRKosbKcNUr8RP8AJdGZ6KRxLjN880F6los04hF56pmuhGDQfRDhPkmzDtcQpUwog3RS1GtINTppJ8PfPp9bpIq8f//Z" alt="Placeholder Image" class="w-full h-full object-cover rounded">
+                </div>
+                <h2 class="text-lg font-semibold text-center">Title Card</h2>
+                <p class="text-medium text-center">Description of the card content goes here.</p>
+            </div>
+
+            <div class="border p-4 rounded hover:shadow-lg transition">
+                <div class="h-60 bg-gray-300 mb-4 rounded">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRajkONmT3wXYtEepAN-xMLh3RJDnVSeKeC8A&s" alt="Placeholder Image" class="w-full h-full object-cover rounded">
+                </div>
+                <h2 class="text-lg font-semibold text-center">Title Card</h2>
+                <p class="text-medium text-center">Description of the card content goes here.</p>
+            </div>
+
+            <div class="border p-4 rounded hover:shadow-lg transition">
+                <div class="h-60 bg-gray-300 mb-4 rounded">
+                    <img src="https://images.steamusercontent.com/ugc/2104925862988564585/66E71C021EA373928A31F81BF51FE190273B603C/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Placeholder Image" class="w-full h-full object-cover rounded">
+                </div>
+                <h2 class="text-lg font-semibold text-center">Title Card</h2>
+                <p class="text-medium text-center">Description of the card content goes here.</p>
+            </div>
+
+                        <div class="border p-4 rounded hover:shadow-lg transition">
+                <div class="h-60 bg-gray-300 mb-4 rounded">
+                    <img src="https://images.steamusercontent.com/ugc/2104925862988564585/66E71C021EA373928A31F81BF51FE190273B603C/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Placeholder Image" class="w-full h-full object-cover rounded">
+                </div>
+                <h2 class="text-lg font-semibold text-center">Title Card</h2>
+                <p class="text-medium text-center">Description of the card content goes here.</p>
+            </div>
+                        <div class="border p-4 rounded hover:shadow-lg transition">
+                <div class="h-60 bg-gray-300 mb-4 rounded">
+                    <img src="https://images.steamusercontent.com/ugc/2104925862988564585/66E71C021EA373928A31F81BF51FE190273B603C/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Placeholder Image" class="w-full h-full object-cover rounded">
+                </div>
+                <h2 class="text-lg font-semibold text-center">Title Card</h2>
+                <p class="text-medium text-center">Description of the card content goes here.</p>
+            </div>
+            
+
+                        <div class="border p-4 rounded hover:shadow-lg transition">
+                <div class="h-60 bg-gray-300 mb-4 rounded">
+                    <img src="https://images.steamusercontent.com/ugc/2104925862988564585/66E71C021EA373928A31F81BF51FE190273B603C/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Placeholder Image" class="w-full h-full object-cover rounded">
+                </div>
+                <h2 class="text-lg font-semibold text-center">Title Card</h2>
+                <p class="text-medium text-center">Description of the card content goes here.</p>
+            </div>
+
+                        <div class="border p-4 rounded hover:shadow-lg transition">
+                <div class="h-60 bg-gray-300 mb-4 rounded">
+                    <img src="https://images.steamusercontent.com/ugc/2104925862988564585/66E71C021EA373928A31F81BF51FE190273B603C/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Placeholder Image" class="w-full h-full object-cover rounded">
+                </div>
+                <h2 class="text-lg font-semibold text-center">Title Card</h2>
+                <p class="text-medium text-center">Description of the card content goes here.</p>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>
